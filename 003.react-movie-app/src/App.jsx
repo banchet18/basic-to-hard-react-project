@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MovieComponent from "./components/MovieComponent";
 
 const Container = styled.div`
   display: flex;
@@ -40,6 +41,20 @@ const SearchIcon = styled.img`
   width: 32px;
   height: 32px;
 `;
+const SearchInput = styled.input`
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+`;
+const MovieListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`;
 
 const App = () => {
   return (
@@ -50,9 +65,15 @@ const App = () => {
         </AppName>
         <SearchBox>
           <SearchIcon src="/search-icon.svg"></SearchIcon>
+          <SearchInput placeholder="Search Movie"></SearchInput>
         </SearchBox>
       </Header>
-      App
+      <MovieListContainer>
+        <MovieComponent />
+        <MovieComponent />
+        <MovieComponent />
+        <MovieComponent />
+      </MovieListContainer>
     </Container>
   );
 };
