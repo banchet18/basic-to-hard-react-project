@@ -14,11 +14,19 @@ const Header = styled.div`
   font-weight: bold;
   box-shadow: 0 3px 6px 0 #555;
 `;
+const AppName = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
 function App() {
   return (
     <container>
-      <Header>React Movie App</Header>the indian
+      <Header>
+        <AppName>React Movie App</AppName>
+      </Header>
+      the indian
     </container>
   );
 }

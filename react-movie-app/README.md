@@ -11,6 +11,7 @@ steps :
 8.creating header
 9.inserting header in container
 10.importing "Josefin Sans" font from google fonts -> index.html then index.css
+11.create AppName container for title of the app and insert in header component. 12.
 
 new to learn :
 
