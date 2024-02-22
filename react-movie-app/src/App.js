@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import MovieComponent from "./component/MovieComponent";
+import { useState } from "react";
 
 const container = styled.div`
   display: flex;
@@ -43,8 +45,24 @@ const SearchIcon = styled.img`
   width: 32px;
   height: 32px;
 `;
+const SearchInput = styled.input`
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  margin-left: 15px;
+`;
+const MovieListContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-evenly;
+`;
 
 function App() {
+  const [search, updateSearchQuery] = useState();
   return (
     <container>
       <Header>
@@ -53,9 +71,15 @@ function App() {
         </AppName>
         <SearchBox>
           <SearchIcon src="/search-icon.svg"></SearchIcon>
+          <SearchInput placeholder="Search Movie"></SearchInput>
         </SearchBox>
       </Header>
-      the indian
+      <MovieListContainer>
+        <MovieComponent />
+        <MovieComponent />
+        <MovieComponent />
+        <MovieComponent />
+      </MovieListContainer>
     </container>
   );
 }

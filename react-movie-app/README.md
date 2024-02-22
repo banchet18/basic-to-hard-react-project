@@ -15,9 +15,15 @@ steps :
 12.download icons from the github
 13.inserting movie icon in header by creating MovieImage Component from public folder.
 14.now create searchbox then create searchicon and then add searchicon in searchbox.
+15.adding input to the searchBox
+16.create movie Component to list down the movies again importing movie component.
+17.MovieContainer => CoverImage => MovieName
+18.created div then added year and type of movie.
+19.create useState for searching movies
 
 new to learn :
 
 1. what is styled components and how to use them?
 2. importing fonts?
 3. how to show image from public folder
+4. object fit, white-space, text-overflow:ellipsis, overflow.
