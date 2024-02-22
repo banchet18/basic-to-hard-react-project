@@ -13,6 +13,8 @@ const Header = styled.div`
   font-size: 25px;
   font-weight: bold;
   box-shadow: 0 3px 6px 0 #555;
+  justify-content: space-between;
+  align-items: center;
 `;
 const AppName = styled.div`
   display: flex;
@@ -24,6 +26,23 @@ const MovieImage = styled.img`
   height: 48px;
   margin: 15px;
 `;
+const SearchBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px;
+  background-color: white;
+  border-radius: 6px;
+  margin-left: 20px;
+  width: 50%;
+  background-color: white;
+
+  align-items: center;
+`;
+
+const SearchIcon = styled.img`
+  width: 32px;
+  height: 32px;
+`;
 
 function App() {
   return (
@@ -32,6 +51,9 @@ function App() {
         <AppName>
           <MovieImage src="/movie-icon.svg"></MovieImage>React Movie App
         </AppName>
+        <SearchBox>
+          <SearchIcon src="/search-icon.svg"></SearchIcon>
+        </SearchBox>
       </Header>
       the indian
     </container>

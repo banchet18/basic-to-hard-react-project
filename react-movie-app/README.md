@@ -14,6 +14,7 @@ steps :
 11.create AppName container for title of the app and insert in header component. 12.
 12.download icons from the github
 13.inserting movie icon in header by creating MovieImage Component from public folder.
+14.now create searchbox then create searchicon and then add searchicon in searchbox.
 
 new to learn :
 
