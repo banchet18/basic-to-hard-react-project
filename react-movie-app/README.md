@@ -12,8 +12,11 @@ steps :
 9.inserting header in container
 10.importing "Josefin Sans" font from google fonts -> index.html then index.css
 11.create AppName container for title of the app and insert in header component. 12.
+12.download icons from the github
+13.inserting movie icon in header by creating MovieImage Component from public folder.
 
 new to learn :
 
 1. what is styled components and how to use them?
 2. importing fonts?
+3. how to show image from public folder

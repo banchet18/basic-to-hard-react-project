@@ -19,12 +19,19 @@ const AppName = styled.div`
   flex-direction: row;
   align-items: center;
 `;
+const MovieImage = styled.img`
+  width: 48px;
+  height: 48px;
+  margin: 15px;
+`;
 
 function App() {
   return (
     <container>
       <Header>
-        <AppName>React Movie App</AppName>
+        <AppName>
+          <MovieImage src="/movie-icon.svg"></MovieImage>React Movie App
+        </AppName>
       </Header>
       the indian
     </container>
